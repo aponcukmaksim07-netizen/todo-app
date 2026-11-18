@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій список справ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <background img src="C:\Users\aponc\Downloads\Фарба (1920x1080).jpg"></background>
+  <main class="todo-container">
+    <h1>Мій список справ</h1>
+
+    <div class="todo-input-section">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Введіть нове завдання"
+        autocomplete="off"
+        aria-label="Нове завдання"
+      >
+      <button id="add-btn" type="button">Додати</button>
+    </div>
+
+    <p id="task-counter" aria-live="polite">
+      Усього: 0 · Активні: 0 · Виконані: 0
+    </p>
+
+    <section class="task-section">
+      <h2>Активні завдання</h2>
+      <ul id="active-list" class="todo-list"></ul>
+      <p id="active-empty" class="empty-message">
+        Немає активних завдань.
+      </p>
+    </section>
+
+    <section class="task-section">
+      <div class="section-heading">
+        <h2>Виконані завдання</h2>
+        <button id="clear-completed-btn" type="button" disabled>
+          Очистити виконані
+        </button>
+      </div>
+
+      <ul id="completed-list" class="todo-list"></ul>
+      <p id="completed-empty" class="empty-message">
+        Немає виконаних завдань.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
